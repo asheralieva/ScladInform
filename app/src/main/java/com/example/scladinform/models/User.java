@@ -11,15 +11,12 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 public class User implements Parcelable, Serializable {
-
     @SerializedName("username")
     @Expose
     String name;
-
     @SerializedName("email")
     @Expose
     String email;
-
     @SerializedName("password")
     @Expose
     String password;
@@ -84,4 +81,3 @@ public class User implements Parcelable, Serializable {
         dest.writeString(password);
     }
 }
-
